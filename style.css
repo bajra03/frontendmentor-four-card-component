@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+
+  --neutral-dark-blue: hsl(234, 12%, 34%);
+  --neutral-grayish-blue: hsl(229, 6%, 66%);
+  --neutral-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-size: 15px;
+  background-color: var(--neutral-light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  padding: 80px 30px 50px;
+}
+
+.description-container {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.description-title h2 {
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 1em;
+  color: var(--neutral-dark-blue);
+}
+
+.description-title h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1em;
+  margin: .5em 0;
+  color: var(--neutral-dark-blue);
+}
+
+.description-text {
+  margin-top: 25px;
+  color: var(--neutral-grayish-blue);
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.service-card {
+  padding: 25px;
+  box-shadow: 0 10px 13px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: .3em;
+  color: var(--neutral-dark-blue);
+}
+
+.service-card p {
+  margin-bottom: 30px;
+  color: var(--neutral-grayish-blue);
+}
+
+.service-card img {
+  margin-left: auto;
+  display: block;
+}
+
+.service-card-team {
+  border-top: 5px solid var(--primary-red);
+}
+
+.service-card--supervisor {
+  border-top: 5px solid var(--primary-cyan);
+}
+
+.service-card-karma {
+  border-top: 5px solid var( --primary-orange);
+}
+
+.service-card-calculator {
+  border-top: 5px solid var(--primary-blue);
+}
+
+@media (min-width: 768px){
+  .description-text {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px){
+  main {
+    max-width: 1080px;
+    width: 100%;
+  }
+
+  .service-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-container .col {
+    width: 33.33%;
+  }
+
+  .service-card {
+    min-width: 300px;
+  }
+}
