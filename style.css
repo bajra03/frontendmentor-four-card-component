@@ -74,6 +74,7 @@ main {
   box-shadow: 0 10px 13px rgba(0,0,0,0.1);
   border-radius: 10px;
   overflow: hidden;
+  background-color: #ffffff;
 }
 
 .service-card h3 {
